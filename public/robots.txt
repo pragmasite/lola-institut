@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lola-institut.pragmasite.com/sitemap.xml
