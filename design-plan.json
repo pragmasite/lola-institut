@@ -1,0 +1,140 @@
+{
+  "projectName": "lola-institut",
+  "colors": {
+    "primary": "#D4A574",
+    "primaryForeground": "#FFFFFF",
+    "secondary": "#F5E6D3",
+    "secondaryForeground": "#5C4A3D",
+    "accent": "#C9A87C",
+    "accentForeground": "#3D3028",
+    "background": "#FFFBF7",
+    "foreground": "#3D3028",
+    "muted": "#F0E8E0",
+    "mutedForeground": "#7A6B5E",
+    "border": "#E5D9CC"
+  },
+  "typography": {
+    "headingFont": "Playfair Display",
+    "bodyFont": "Lato",
+    "baseFontSize": "16px"
+  },
+  "layout": [
+    {
+      "name": "Header",
+      "description": "Fixed navigation with logo and menu links to sections. Includes language switcher for FR/DE/IT/EN."
+    },
+    {
+      "name": "DisclaimerModal",
+      "description": "Modal overlay shown on first visit with draft preview disclaimer and dismiss button."
+    },
+    {
+      "name": "Hero",
+      "description": "Full-width hero section with business name, tagline about beauty services, and call-to-action button to contact section."
+    },
+    {
+      "name": "About",
+      "description": "Section introducing Lola Institut, featuring the owner's passion for beauty care and commitment to ongoing training and client satisfaction."
+    },
+    {
+      "name": "Services",
+      "description": "Grid or card layout showcasing beauty salon services offered (facials, body treatments, manicure, pedicure, waxing, etc.)."
+    },
+    {
+      "name": "OpeningHours",
+      "description": "Elegant display of weekly opening hours with clear Monday-Saturday schedule."
+    },
+    {
+      "name": "Location",
+      "description": "Interactive map showing the salon location in Chippis, Switzerland with address and directions."
+    },
+    {
+      "name": "Contact",
+      "description": "Contact information display (no form) with phone, email, address, and social media links to Facebook and Instagram."
+    },
+    {
+      "name": "Footer",
+      "description": "Footer with copyright, quick links, and social media icons."
+    }
+  ],
+  "components": [
+    {
+      "name": "NavigationBar",
+      "purpose": "Sticky header with logo, navigation links to page sections, and language selector dropdown."
+    },
+    {
+      "name": "DisclaimerModal",
+      "purpose": "Initial modal popup informing visitors this is a draft preview website with dismiss functionality."
+    },
+    {
+      "name": "HeroSection",
+      "purpose": "Visually striking introduction with business name, elegant background, and CTA button."
+    },
+    {
+      "name": "AboutSection",
+      "purpose": "Text-focused section with owner's story and salon philosophy, possibly with decorative elements."
+    },
+    {
+      "name": "ServiceCard",
+      "purpose": "Individual card component for displaying each service category with icon and description."
+    },
+    {
+      "name": "ServicesGrid",
+      "purpose": "Responsive grid container for service cards."
+    },
+    {
+      "name": "OpeningHoursTable",
+      "purpose": "Styled table or list showing daily opening hours with emphasis on current day."
+    },
+    {
+      "name": "MapEmbed",
+      "purpose": "Embedded map component showing salon location at Rue de la Place 4, Chippis."
+    },
+    {
+      "name": "ContactInfo",
+      "purpose": "Display component for phone, email, and address with clickable links."
+    },
+    {
+      "name": "SocialLinks",
+      "purpose": "Social media icon links to Facebook and Instagram profiles."
+    },
+    {
+      "name": "LanguageSwitcher",
+      "purpose": "Dropdown or button group for switching between FR, DE, IT, EN versions."
+    },
+    {
+      "name": "Footer",
+      "purpose": "Site footer with copyright, navigation links, and social icons."
+    }
+  ],
+  "featureImplementations": [
+    {
+      "feature": "Multi-language Support",
+      "implementation": "Create separate URL routes (/fr, /de, /it, /en) with French as default based on postal code 3965 (Romandie region). Use i18n JSON files for translations."
+    },
+    {
+      "feature": "Disclaimer Modal",
+      "implementation": "Show modal on page load with localStorage check to prevent re-showing after dismissal. Contains draft preview warning text and dismiss button."
+    },
+    {
+      "feature": "Logo Integration",
+      "implementation": "Download logo from provided URL and store in assets directory. Use as both header logo and favicon. Ensure proper sizing for both use cases."
+    },
+    {
+      "feature": "SEO Optimization",
+      "implementation": "Set meta title to 'Lola Institut | Chippis', description summarizing beauty services, Open Graph tags for social sharing, and lang attribute based on selected language."
+    },
+    {
+      "feature": "Responsive Design",
+      "implementation": "Mobile-first approach with breakpoints at 640px, 768px, 1024px. Hamburger menu on mobile, stacked sections, and touch-friendly buttons."
+    },
+    {
+      "feature": "Map Integration",
+      "implementation": "Embed Google Maps or OpenStreetMap iframe centered on coordinates 46.279334, 7.5422 with marker at salon address."
+    },
+    {
+      "feature": "Contact Links",
+      "implementation": "Phone number as tel: link, email as mailto: link for easy mobile interaction. No contact form per requirements."
+    }
+  ],
+  "additionalNotes": "Lola Institut is a beauty salon (institut de beauté) in Chippis, Switzerland. The design should evoke elegance, warmth, and professionalism appropriate for a personal care business. Color palette uses warm, soft tones (golds, creams, warm browns) to create a luxurious yet welcoming atmosphere. Typography pairs elegant serif headings (Playfair Display) with clean sans-serif body text (Lato) for readability. The single-page layout ensures easy navigation on all devices. French is the primary language given the Romandie location (postal code 3965). No emojis should be used despite any in the source content. Images should be downloaded locally rather than hotlinked."
+}
